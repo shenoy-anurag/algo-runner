@@ -1,6 +1,6 @@
 # Overview
-[![PyPI Version](https://img.shields.io/pypi/v/leetcode-local-runner.svg)](https://pypi.org/project/leetcode-local-runner)
-[![PyPI License](https://img.shields.io/pypi/l/leetcode-local-runner.svg)](https://pypi.org/project/leetcode-local-runner)
+![PyPI - Version](https://img.shields.io/pypi/v/leetcode-local-runner)
+![PyPI - License](https://img.shields.io/pypi/l/leetcode-local-runner)
 
 A python package with tools to let you try coding problems and check your code against your own test cases.
 
