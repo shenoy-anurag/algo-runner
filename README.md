@@ -28,15 +28,29 @@ $ poetry add leetcode-local-runner
 
 # Usage
 
-1. Install the library.
-2. Pick a problem to solve from either LeetCode or Project Euler.
-3. Copy the code in the editor into a python file.
-   ```py
-   class Solution:
-    def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
-        pass
-   ```
-4. Create your own test-cases and pass them into the LeetCode class like so:
+#### 1. Install the library.
+```text
+$ pip install leetcode-local-runner
+```
+#### 2. Pick a problem to solve from either LeetCode or Project Euler.
+Like [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/description/)
+
+```
+739. Daily Temperatures
+Medium
+
+Given an array of integers temperatures represents the daily temperatures, return an array answer
+such that answer[i] is the number of days you have to wait after the ith day to get a warmer temperature.
+If there is no future day for which this is possible, keep answer[i] == 0 instead.
+```
+
+#### 3. Copy the code in the editor into a python file.
+```py
+class Solution:
+def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
+    pass
+```
+#### 4. Create your own test-cases and pass them into the LeetCode class like so:
 ```py
 test_cases = [
     {"temperatures": [73, 74, 75, 71, 69, 72, 76, 73]},
@@ -49,7 +63,11 @@ expected_outputs = [
     [1, 1, 0],
 ]
 
-lc = LeetCode(test_cases=test_cases, expected_outputs=expected_outputs, fn=Solution().isSameTree)
+lc = LeetCode(
+    test_cases=test_cases, 
+    expected_outputs=expected_outputs, 
+    fn=Solution().isSameTree
+)
 lc.run_test_cases()
 ```
 ![Run Test Cases Output](docs/assets/output.png "Run Test Cases Output")
