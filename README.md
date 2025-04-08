@@ -66,7 +66,7 @@ expected_outputs = [
 lc = LeetCode(
     test_cases=test_cases, 
     expected_outputs=expected_outputs, 
-    fn=Solution().isSameTree
+    fn=Solution().dailyTemperatures
 )
 lc.run_test_cases()
 ```
